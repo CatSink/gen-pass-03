@@ -15,7 +15,7 @@ var password=document.getElementById("password");
    var randomNumber = Math.floor(Math.random() * chars.length);
    password += chars.substring(randomNumber, randomNumber +1);
   }
-        document.getElementById("password").value = password;
+        document.getElementById("password").value = "";
  }
 
 function generatePassword() { 
@@ -38,7 +38,6 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("Generated Password");
 
-  passwordText.value ="password";
 
 }
 
